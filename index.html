@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tic Tac Toe 2.0</title>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</head>
+<body>
+	<div class="container">
+		<h1 class="text-light text-center"> Tic Tac Toe 2.0</h1>
+
+			<section id="game-board" class="mx-auto d-flex flex-wrap w-50 justify-content-center">
+
+				<div id="1" class="board-square b1" style="width: 150px; height:150px;"> </div>
+
+				<div id="2" class="board-square b2" style="width: 150px; height:150px;"> </div>
+
+				<div id="3" class="board-square b3" style="width: 150px; height:150px;"> </div>
+
+				<div id="4" class="board-square b4" style="width: 150px; height:150px;"> </div>
+
+				<div id="5" class="board-square b5" style="width: 150px; height:150px;"> </div>
+
+				<div id="6" class="board-square b6" style="width: 150px; height:150px;"> </div>
+
+				<div id="7" class="board-square b7" style="width: 150px; height:150px;"> </div>
+
+				<div id="8" class="board-square b8" style="width: 150px; height:150px;"> </div>
+
+				<div id="9" class="board-square b9" style="width: 150px; height:150px;"> </div>
+
+			</section>
+
+		<div class="button-container text-center">
+			<button type="button" class="btn btn-outline-light m-3" data-toggle="modal" data-target="#newGameModal">New Game</button>
+		</div>
+	</div>
+
+
+	<!-- Modal -->
+	<div class="modal fade" id="newGameModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered" role="document">
+	    <div class="modal-content text-center bg-secondary text-light">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="exampleModalCenterTitle">Start A New Game!</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+			<h5>Choose Your Player:</h3>
+			<button id="X" value="X" class="choose-player btn btn-outline-light m-2">Player X</button>
+			<button id="O" value="O" class="choose-player btn btn-outline-light m-2">Player O</button>
+			<h5>Choose AI Difficulty:</h3>
+			<button id="easy" value="easy" class="choose-ai btn btn-outline-light m-2" data-toggle="modal" data-target="#newGameModal">Easy</button>
+			<button id="hard" value="hard" class="choose-ai btn btn-outline-light m-2" data-toggle="modal" data-target="#newGameModal">Hard</button>
+			<button id="noAi" value="noAi" class="choose-ai btn btn-outline-light m-2" data-toggle="modal" data-target="#newGameModal">PvP</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+</body>
+	<script type="text/javascript" src="script.js"></script>
+</html>
